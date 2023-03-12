@@ -46,6 +46,8 @@ Foundation is a Design System for the OpenStreetMap ecosystem based on [Bootstra
 
 Look at [CONTRIBUTING](./CONTRIBUTING.md)
 
+## Projects ##
+ - [Gaia - Redesign OSM.org](https://github.com/Playzinho/gaia)
 ## Next steps ##
 
 - Darkmode support
