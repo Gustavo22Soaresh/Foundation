@@ -1,10 +1,13 @@
 <h1 align="center">
   <br>
   <img src="./cover.png" alt="Foudantion Design System">
-  Foundation <br>
+  Foundation (beta) <br>
 <p>design system for OSM apps</p>
 </h1>
 
+## Whats is Foundation? ##
+
+Foundation is a Design System for the OpenStreetMap ecosystem based on [Bootstrap](https://getbootstrap.com/) and keeping the simplicity of OSM.org.
 
 ## Typography - [Source Sans Pro](https://fonts.google.com/specimen/Source+Sans+Pro/about) ##
 
@@ -42,6 +45,11 @@
 ## Collaborate ##
 
 Look at [CONTRIBUTING](./CONTRIBUTING.md)
+
+## Next steps ##
+
+- Darkmode support
+- Port to TailwindCSS
 
 ## License ##
 - [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/)
