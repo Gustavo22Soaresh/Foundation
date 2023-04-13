@@ -9,6 +9,8 @@
 
 Foundation is a Design System for the OpenStreetMap ecosystem based on [Bootstrap](https://getbootstrap.com/) and keeping the simplicity of OSM.org.
 
+  <img src="./Style (1).png" alt="Foudantion Design System">
+
 ## Typography - [Source Sans Pro](https://fonts.google.com/specimen/Source+Sans+Pro/about) ##
 
 | Class  | Weight | px | px |
