@@ -15,7 +15,7 @@ Foundation is a Design System for the OpenStreetMap ecosystem based on [Bootstra
 
 | Class  | Weight | px | px |
 | ----- | ----- | --- | --- |
-| H1 | Bold (700) | 72px | 4.5rem |
+| H1 | Semibold (600) | 72px | 4.5rem |
 | H2 | Semibold (600) | 48px | 3rem |
 | H3 | Semibold (600) | 40px | 2.5rem |
 | H4 | Bold (700) | 24px | 1.5rem |
