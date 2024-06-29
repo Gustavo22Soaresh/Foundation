@@ -1,225 +1,313 @@
 @charset "UTF-8";
-:root {
-    /* colors */
-    --primary: #5872C7;
-    --secondary: #0b5ed7;
-    --justblue: #5872C7;
-    --justgreen: #6CC559;
-    --darkblue: #1e2936;
-    --darkgray: #4c4c4c;
-    --gray: #b1b2b5;
-    --redice: #e8e9ea;
+/* colors */
+    :root {
+        /*colors primarys */
+            --primary: #5872C7;
+            --primary-bg: #FFFF;
+            --secondary-bg: #e8e9ea;
+            --primary-hover:#2040a8;
 
-    --font-family-primary: 'Source Sans Pro', sans-serif !important;
-} 
+        /* colors */
+            --justblue: #5872C7;
+            --justgreen: #6CC559;
+            --darkblue: #1e2936;
+            --darkgray: #4c4c4c;
+            --gray: #b1b2b5;
+            --redice: #e8e9ea;
+    } 
 
-body {
-    background-color: var(--redice);
-}
+/* typograph */
+    :root {
+        --font-family: "Source Sans 3", sans-serif;
+        --font-size-xs: 00.75rem;
+        --font-size-md: 1rem;
+        --font-size-lg: 1.125rem;
+        --font-size-xl: 1.25rem;
+        --font-size-xxl: 1.5rem;
+        --font-size-h3: 2.5rem;
+        --font-size-h2:3rem;
+        --font-size-h1:4.5rem;
+        --font-weight-light: 300;
+        --font-weight-regular: 400;
+        --font-weight-medium: 600;
+        --font-weight-bold: 700;
+    }
+
+/* border-radius */
+    :root {
+        --border-radius-sm: 0.25rem;
+        --border-radius-md: 0.5rem;
+        --border-radius-lg: 1rem;
+    }
+
+  /* Spacing*/
+    :root {
+        --spacing-xs: 0.25rem;
+        --spacing-sm: 0.5rem;
+        --spacing-md: 1rem;
+        --spacing-lg: 1.5rem;
+        --spacing-xl: 2rem;
+    }
+
+    /* shadows */
+    :root {
+        --shadow-color-primary: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+
+    body, html {
+        display: flex;
+        font-family: var(--font-family);
+        max-width: 100%;
+        max-height: 100%;
+        gap: 0rem;
+        padding: 0rem;
+        margin: 0rem;
+        background-color: white;
+    }
 
 /* typography */
 
-    h1 {
+    h1, h2, h3, h4, h5, h6, p, .body-light, .body-medium, .small, .caption .nav-link {
+        margin: 0;
+    }
+
+    h1, h2, h3 {
         color: var(--darkblue);
-        font-style: normal;
-        font-size: 4.5rem;
-        font-weight: 600;
-        line-height: 1.2;
+        font-weight: var(--font-weight-medium);
+    }
+
+    h5, h6, p, .body-light, .body-medium, .small, .caption .nav-link{
+        color: var(--darkgray);
+    }
+
+    h5, h6, .caption {
+        font-weight: var(--font-weight-bold);
+    }
+
+    h4, p, .small .nav-link {
+        font-weight: var(--font-weight-regular);
+    }
+
+    p, .body-medium, .body-light {
+        font-size: var(--font-size-md);
+    }
+
+    .small, .caption {
+        font-size: var(--font-size-xs);
+    }
+
+    h1 {
+        font-size: var(--font-size-h1);
     }
 
     h2 {
-        color: var(--darkblue);
-        font-style: normal;
-        font-size: 3rem;
-        font-weight: 600;
-        line-height: 1.2;
+        font-size: var(--font-size-h2);
     }
 
     h3 {
-        color: var(--darkblue);
-        font-style: normal;
-        font-size: 2.5rem;
-        font-weight: 600;
-        line-height: 1.2;
+        font-size: var(--font-size-h3);
     }
 
-    h4{
-        color: var(--darkgray);
-        font-style: normal;
-        font-size: 1.5rem;
-        font-weight: 700;
-        line-height: 1.2;
+    h4 {
+        font-size: var(--font-size-xxl);
     }
 
     h5 {
-        color: var(--darkgray);
-        font-style: normal;
-        font-size: 1.25rem;
-        font-weight: 700;
-        line-height: 1.2;
+        font-size: var(--font-size-xl);
     }
 
     h6 {
-        color: var(--darkgray);
-        font-style: normal;
-        font-size: 1.125rem;
-        font-weight: 700;
-        line-height: 1.2;
+        font-size: var(--font-size-xl);
     }
 
-    .bodylight {
-        color: var(--darkgray);
-        font-style: normal;
-        font-size: 1rem;
-        font-weight: 300;
-        line-height: 1.2;
+    .body-light {
+        font-weight: var(--font-weight-light);
     }
 
-    p {
-        color: var(--darkgray);
-        font-style: normal;
-        font-size: 1rem;
-        font-weight: 400;
-        line-height: 1.2;
+/* links */
+    .link {
+        text-decoration: none;
     }
 
-    .bodymedium {
-        color: var(--darkgray);
-        font-style: normal;
-        font-size: 1rem;
-        font-weight: 600;
-        line-height: 1.2;
+    .link:hover {
+        color: var(--justblue);
     }
 
-    .small {
-        color: var(--darkgray);
-        font-size: 0.75rem;
-        font-weight: 400;
-        line-height: 1.2;
+    .nav-link {
+        text-decoration: none;
     }
 
-    .caption {
-        color: var(--darkgray);
-        font-style: normal;
-        font-size: 0.75rem;
-        font-weight: 700;
-        line-height: 1.2;
-    }
-
-    .link-primary {
-        color: var(--justblue) !important;
+    .nav-link:hover {
+        color: var(--primary-hover);
+        cursor: pointer;
     }
 
 /* buttons */
-    .btn-primary {
-        border: 0px;
-        background: var(--primary);
-        padding: 0.5rem 2rem;
-    }
-    .btn-primary:hover {
-        background: var(--secondary);
-    }
-
-    .btn-secondary {
-        border: 0px;
-        background: var(--secondary);
-        padding: 0.5rem 2rem;
+    button {
+        font-family: var(--font-family);
+        font-size: var(--font-size-md);
+        padding: var(--spacing-sm) var(--spacing-xl);
+        border-radius: var(--border-radius-sm);
+        border: 0;
+        cursor: pointer;
     }
 
-    .btn-outline-primary {
-        padding: 0.5rem 2rem;
+    button:active {
+        box-shadow: var(--shadow-color-primary);
+        transform: scale(0.95);
+    }
+
+    .button-secondary, .button-outline, .button-tertiary {
+        font-weight: var(--font-weight-bold);
+    }
+
+    
+    /* button primary */
+        .button-primary {
+            color: white;
+            background: var(--primary);
+        }
+
+        .button-primary:hover {
+            background: var(--primary-hover);
+        }
+        .button-primary:active {
+            background-color: var(--primary-hover);
+            
+        }
+        
+
+    /* button secondary */
+        .button-secondary {
+            color: var(--primary);
+            background: var(--redice);
+        }
+
+        .button-secondary:hover {
+            background-color: var(--primary);
+            color: white;
+        }
+
+    .button-outline {
         color: var(--primary);
-        font-weight: 600;
     }
 
-    .btn-outline-primary:hover {
+    .button-outline:hover {
         background: var(--primary);
     }
+    /* button tertiary */
+        .button-tertiary {
+            color: var(--darkgray);
+            background: none;
+            padding: var(--spacing-sm) var(--spacing-md);
+        }
 
-    .btn-tertiary {
-        padding: 0.5rem 2rem;
+        .button-tertiary:hover {
+            color: var(--darkblue);
+        }
+
+        .button-tertiary:active {
+            box-shadow: none; 
+        }
+
+
+    
+
+/* forms and inputs */
+
+    label, input, textarea {
+        font-size: var(--font-size-md);
+        font-family: var(--font-family);
+        font-weight: var(--font-weight-regular);
         color: var(--darkgray);
-        font-style: normal;
-        font-weight: 600;
+        }
+
+    input, textarea {
+        width: 100%;
+        border: 0.025rem solid var(--gray);
+        padding: var(--spacing-sm);
+        border-radius: var(--border-radius-sm);
+        box-sizing: border-box;
+        background: none;
+        }
+
+    input:focus, textarea:focus {
+        border-color: var(--primary);
+        outline: none;
+        box-shadow: var(--shadow-color-primary);
+        }
+
+    .form-container, .check, .form-group {
+        display: flex;
+        width: 100vw;
+        height: fit-content;
+        flex-wrap: nowrap;
+        align-content: stretch;
+        justify-content: start;
+        flex-grow: 1;
+        gap: var(--spacing-sm);
+    }
+    .form-container {
+        align-items: start;
+        flex-direction: column;
+        flex-shrink: 0;
+        max-width: 26rem;
+        min-width: 17rem;
     }
 
-    .btn-tertiary:hover {
-        background: var(--redice);
+    .form-group {
+        flex-direction: column;
+        gap: var(--spacing-lg);
     }
 
-/* forms */
+    .check {
+        align-items: center;
+        align-content: stretch;
+        justify-content: start;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
 
-    .form-label {
-        color: var(--darkgray);
+    .check-box {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .check-box:before {
+        color: #1e2936;
     }
 
 
-    .form-check-label {
-        color: var(--darkgray);
-    }
+/* modal */
 
-/* boxes */
-.box-normal {
+.modal-small-box, .modal-big-box, .modal-box-inner{
     position: relative;
-    width: 30rem;
+    width: 100%vw;
     height: auto;
-    border-radius: 0.5rem;
-    background: white;
+    background: black;
+    border-radius: var(--border-radius-md);
     display: flex;
-    flex-direction: column;
     align-items: center;
+    align-content: stretch;
     justify-content: center;
-    gap: 1rem;
-    padding: 1.5rem;
-    flex-wrap: wrap;
-  }
-
-  .box-big {
-    position: relative;
-    max-width: 40rem;
-    height: auto;
-    border-radius: 0.5rem;
-    background: white;
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: start;
-    gap: 0.5rem;
-    padding: 2rem;
-    flex-wrap: wrap;
-  }
-
-  /* logo */
-    .logo {
-    position: relative;
-    width: auto;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: start;
-    gap: 8px;
-    padding: 0px;
     flex-wrap: nowrap;
-  }
+    margin: 0 var(--spacing-sm);
+    
+}
 
-    #logo-img {
-        width: 2.5rem;
-        height: 2.5rem;
-    }
-    #logo-text {
-        color: var(--darkblue);
-    }
-
-@media screen and (max-width: 600px) {
-  .box-big{
-    width: 96vw;
-    padding: 2rem 1rem;
-  }
-
-  .box-normal {
-    width: 94vw;
-    padding: 1rem;
+.modal-box-small {
     max-width: 30rem;
+    min-width: 19rem;
   }
+
+.modal-box-big {
+    max-width: 38rem;
+    min-width: 19rem;
+    padding: var(--spacing-lg);
+  }
+
+.modal-box-inner {
+  padding: 0 var(--spacing-md);
+  margin: var(--spacing-lg) var(--spacing-md);
 }
