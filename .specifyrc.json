@@ -1,0 +1,20 @@
+{
+  "repository": "@gustav/foundation",
+  "head": "specifyrc-json",
+  "base": "main",
+  "version": "2",
+  "rules": [
+    {
+      "name": "SDTF",
+      "parsers": [
+        {
+          "name": "to-sdtf",
+          "output": {
+            "type": "file",
+            "filePath": "output/tokens.json"
+          }
+        }
+      ]
+    }
+  ]
+}
