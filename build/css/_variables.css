@@ -173,10 +173,10 @@
     --font-family-sans-serif: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Lato, Helvetica, Arial, sans-serif;
 
     /* font weight */
-    --font-weight-light: 300, light;
-    --font-weight-regular: 400, regular;
-    --font-weight-semibold: 600, semibold;
-    --font-weight-bold: 700, bold;
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
 
     /* font size */
     --font-size-12: var(--dimension-12, 0.75rem);
@@ -207,27 +207,10 @@
     --paragraph-spacing-body-md: var(--dimension-16, 1rem);
 
     /* line-height */
-    --line-height-header: 100;
-    --line-height-paragraph: 120;
-    --line-height-label: 100;
+    --line-height-header: 1.25;
+    --line-height-paragraph: 1.4;
+    --line-height-label: 1.25;
 
-    /* style */
-    --display-1-regular: var(--font-weight-regular, 400) 7.5rem/100 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Lato, Helvetica, Arial, sans-serif;
-    --display-2-regular: var(--font-weight-regular, 400) 6rem/100 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Lato, Helvetica, Arial, sans-serif;
-    --display-3-regular: var(--font-weight-regular, 400) 4.75rem/100 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Lato, Helvetica, Arial, sans-serif;
-    --header-1-medium: var(--font-weight-semibold, 600) 3.75rem/100 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Lato, Helvetica, Arial, sans-serif;
-    --header-2-medium: 600 3rem/100 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Lato, Helvetica, Arial, sans-serif;
-    --header-3-medium: 600 2.5rem/100 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Lato, Helvetica, Arial, sans-serif;
-    --header-4-regular: var(--font-weight-regular, 400) 2rem/100 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Lato, Helvetica, Arial, sans-serif;
-    --header-5-regular: var(--font-weight-regular, 400) 1.5rem/100 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Lato, Helvetica, Arial, sans-serif;
-    --header-6-bold: 700 1.25rem/100 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Lato, Helvetica, Arial, sans-serif;
-    --body-lg-regular: var(--font-weight-regular, 400) 1.5rem/100 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Lato, Helvetica, Arial, sans-serif;
-    --body-md-medium: 600 1rem/100 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Lato, Helvetica, Arial, sans-serif;
-    --body-md-regular: var(--font-weight-regular, 400) 1rem/100 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Lato, Helvetica, Arial, sans-serif;
-    --body-md-light: var(--font-weight-light, 300) 1rem/100 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Lato, Helvetica, Arial, sans-serif;
-    --body-sm-regular: var(--font-weight-regular, 400) 0.75rem/100 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Lato, Helvetica, Arial, sans-serif;
-    --body-sm-bold: 700 4.75rem/100 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Lato, Helvetica, Arial, sans-serif;
-    
     /* size */
     --size-8: var(--dimension-8, 0.5rem);
     --size-12: var(--dimension-12, 0.75rem);
@@ -317,7 +300,7 @@
     --color-link-active: var(--blue-600, #06256d); /* - active links */
     --color-link-visted: var(--purple-600, #6615aa); /* - Visited links */
     --color-success: var(--green-500, #078745); /* Success messages and icons */
-    --color-info: var(--indigo-gray-700, #243045); /* - Icons in info messages */
+    --color-info: var(--blue-500, #0b4ad8); /* - Icons in info messages */
     --color-warning: var(--orange-700, #8f4d00); /* - Icons in warning messages */
     --color-error: var(--red-500, #e02d2d);  /* Error messages and icons */
 
@@ -333,7 +316,7 @@
     --bgn-danger: var(--red-500, #e02d2d); /* - Default danger/error backgrounds */
     --bgn-danger-hover: var(--red-600, #b52424); /* - Hover on danger/error interactive backgrounds */
     --bgn-danger-active: var(--red-700, #8a1b1b); /* - Active danger/error backgrounds (e.g. active selected-error checkbox) */
-    --bgn-info: var(--gray-100, #f4f4f4); /* - Info feedback background */
+    --bgn-info: var(--blue-100, #e2eafd); /* - Info feedback background */
     --bgn-success: var(--olive-100, #edf6eb); /* - Success feedback background */
     --bgn-warning: var(--orange-100, #fff5ea); /* - Warning feedback backgorund */
     --bgn-error: var(--red-200, #ffd2d2); /* - Error feedbacks backgorund */
@@ -344,14 +327,25 @@
     --border-color-disable: var(--color-disable, #bebebe); /* - Disabled form item borders */
     --border-color-accent: var(--color-accent, #57814c); /* - Border color of accent elements */
     --border-color-focus: var(--color-accent, #57814c);  /* - Base focus color */
-    --border-color-info: var(--color-info, #243045);  /* - Notice messages border */
+    --border-color-info: var(--color-info, #0b4ad8);  /* - Notice messages border */
     --border-color-success: var(--color-success, #078745); /* - Success messages border - Success forms */
     --border-color-warning: var(--color-warning, #8f4d00);; /* - Warning messages border */
     --border-color-error: var(--color-error, #e02d2d); 
 
-    /* Night theme */
+    /* border styles */
+    --border-style-base: var(--border-width-04, 0.025rem) solid var(--border-color-base);
+    --border-style-accent: var(--border-width-1, 0.0625rem) solid var(--border-color-accent);
+    --border-style-focus: var(--border-width-1, 0.0625rem) solid var(--border-color-accent);
+    --border-style-active: var(--border-width-1, 0.0625rem) solid var(--border-color-accent);
+    --border-style-error: var(--border-width-1, 0.0625rem) solid var(--border-color-error);
+    --border-style-success: var(--border-width-1, 0.0625rem) solid var(--border-color-success);
+    
 
-    @media (prefers-color-scheme: dark) {
+
+  }
+  
+      /* Night theme */
+      @media (prefers-color-scheme: dark) {
         :root {
         /* text and icons colors */
         --color-base: var(--gray-300, #bebebe); /* Default color of all text styles and icons */
@@ -368,7 +362,7 @@
         --color-link-active: var(--blue-500, #0b4ad8); /* Active links */
         --color-link-visited: var(--purple-300, #d199f9); /* Visited links */
         --color-success: var(--green-400, #5fc390); /* Success messages and icons */
-        --color-info: var(--indigo-gray-4, #ffdd6d); /* Warning messages and icons */
+        --color-info: var(--indigo-gray-400, #7092ff); /* Warning messages and icons */
         --color-error: var(--red-400, #ff5252); /* Error messages and icons */
 
         /* background colors */
@@ -400,14 +394,3 @@
         --border-color-error: var(--color-error); /* Error messages and form item errors */
         }
     }
-    
-    /* border styles */
-    --border-style-base: var(--border-width-04, 0.025rem) solid var(--border-color-base);
-    --border-style-accent: var(--border-width-1, 0.0625rem) solid var(--border-color-accent);
-    --border-style-focus: var(--border-width-1, 0.0625rem) solid var(--border-color-accent);
-    --border-style-active: var(--border-width-1, 0.0625rem) solid var(--border-color-accent);
-    --border-style-error: var(--border-width-1, 0.0625rem) solid var(--border-color-error);
-    --border-style-success: var(--border-width-1, 0.0625rem) solid var(--border-color-success);
-
-  }
-  
