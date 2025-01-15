@@ -1,0 +1,14 @@
+{
+  "font": {
+    "family": {
+      "base": {
+        "value": "{asset.font.opensans.name.value}",
+        "type": "fontFamily"
+      },
+      "icons": {
+        "value": "{asset.font.icon.name.value}",
+        "type": "fontFamily"
+      }
+    }
+  }
+}
