@@ -363,6 +363,7 @@
         --color-link-visited: var(--purple-300, #d199f9); /* Visited links */
         --color-success: var(--green-400, #5fc390); /* Success messages and icons */
         --color-info: var(--indigo-gray-400, #7092ff); /* Warning messages and icons */
+        --color-warning: var(--yellow-400); /* - Icons in warning messages */
         --color-error: var(--red-400, #ff5252); /* Error messages and icons */
 
         /* background colors */

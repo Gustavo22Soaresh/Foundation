@@ -4,9 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="_variables.css">
+    <link rel="stylesheet" href="foudantion.css">
+    <link rel="stylesheet" href="components.css">
 </head>
-<body style="background: var(--bgn-accent);">
-    <h1 style="color: var(--color-success);">Text</h1>
+<body class="bgn-base">
+    <h1 class="header-1 semibold color-error">Text</h1>
+
+    <div style="gap: 0.5rem; padding: 1rem;">
+        <label for="example-input" class="body-md" style="color: var(--color-base); padding-bottom: 0.5rem;">Your Input:</label>
+        <input id="example-input" class="fdn-input" type="text" placeholder="Type here..." />
+    </div>
+    
+
+    <button class="fdn-button">Its me</button>
+    <button class="fdn-button tertiary">Its me</button>
+    <button class="fdn-button danger">Its me</button>
+    <button class="fdn-button outline">Its me</button>
+
 </body>
 </html>
