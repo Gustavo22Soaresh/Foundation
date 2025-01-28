@@ -335,7 +335,7 @@
     /* border styles */
     --border-style-base: var(--border-width-04, 0.025rem) solid var(--border-color-base);
     --border-style-accent: var(--border-width-1, 0.0625rem) solid var(--border-color-accent);
-    --border-style-focus: var(--border-width-1, 0.0625rem) solid var(--border-color-accent);
+    --border-style-focus: var(--border-width-2, 0.0625rem) solid var(--border-color-accent);
     --border-style-active: var(--border-width-1, 0.0625rem) solid var(--border-color-accent);
     --border-style-error: var(--border-width-1, 0.0625rem) solid var(--border-color-error);
     --border-style-success: var(--border-width-1, 0.0625rem) solid var(--border-color-success);

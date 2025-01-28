@@ -1,10 +1,11 @@
 @import url(_variables.css);
 
 /* Estilos base para todos os botões */
-.fdn-button {
+.fdn-button { 
     display: inline-flex;
-  align-items: center;
-  justify-content: center; 
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
     background-color: var(--bgn-accent);
     color: var(--color-inverse);
     padding: var(--spacing-8) var(--spacing-32);
@@ -12,17 +13,30 @@
     gap: var(--spacing-4);
     border-radius: var(--border-radius-4);
     font-family: var(--font-family-sans-serif);
-    font-weight: var(--font-weight-regular);
+    font-weight: var(--font-weight-regular);    
     font-size: var(--font-size-16);
-    line-height: 125%;
+    line-height: 1;
+    outline: none;
     cursor: var(--cursor-pointer);
+    height: var(--dimension-36);
 
     &:hover {
         background-color: var(--bgn-accent-hover);
     }
 
+    &:focus {
+        outline: none;
+    }
+
+    &:focus-visible {
+        outline: var(--border-style-focus);
+        outline-offset: var(--border-width-2);
+        border-color: var(--border-color-base);
+    }
+
     &:active {
         background-color: var(--bgn-accent-active);
+        outline: none;
     }
 
     &.danger {
@@ -73,7 +87,14 @@
     }
 
     &.with-icon {
+        align-items: center;
         padding: var(--spacing-8) var(--spacing-24);
+    }
+
+    .material-symbols-outlined {
+        font-size: 20px; /* Tamanho do ícone */
+        line-height: 1; /* Garante que o ícone não tenha espaçamento extra */
+        vertical-align: middle; /* Alinha o ícone verticalmente com o texto */
     }
 
     &:disabled,
@@ -91,35 +112,55 @@
     }
 }
 
-.fdn-input {
-    min-width: var(--field-min-width, 2.5rem);
-    max-width: var(--field-max-width, 26rem);
-    min-height: var(--field-min-width, 2.5rem);
-    padding: var(--spacing-8, 0.5rem) var(--spacing-12, 0.75rem);
+.fdn-field {
+    padding: var(--spacing-8) var(--spacing-12, 0.75rem);
     display: flex;
     align-items: center;
-    gap: var(--spacing-8, 0.5rem);
-    border-radius: var(--radius-sm, 0.25rem);
-    border: var(--border-width-04, 0.4px) solid var(--border-color-base, #BEBEBE);
+    min-width: var(--size-272);
+    max-width: var(--size-416);
+    max-height: var(--size-40);
+    gap: var(--spacing-8);
+    border-radius: var(--border-radius-4);
+    border: var(--border-style-base);
     background: var(--colors-base-transparent, rgba(0, 0, 0, 0.00));
-    font-family: var(--font-family-sans-serif, Arial, sans-serif);
-    font-size: var(--font-size-16, 1rem);
     color: var(--color-base);
+    font-family: var(--font-family-sans-serif);
+    line-height: 1.25;
+    font-size: var(--font-size-16);
     outline: none;
     transition: border-color 0.2s, box-shadow 0.2s;
+
+    &:hover {
+        border-color: var(--border-color-accent);
+    }
+
+    &:active {
+        border-color: aqua;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &:focus-visible {
+        color: var(--color-emphasized);
+        outline: var(--border-style-focus);
+        outline-offset: var(--border-width-2);
+        border-color: var(--border-color-base);
+    }
+
+    &:disabled {
+        background: var(--colors-disable);
+        border-color: var(--border-color-disable);
+        color: var(--color-text-disabled);
+        cursor: not-allowed;
+    }
+
 }
 
-/* Estilo para foco */
-.fdn-input:focus {
-    border-color: var(--border-color-focus);
-    box-shadow: 0 0 0 3px var(--focus-ring-color, rgba(75, 130, 255, 0.2));
+.fdn-input {
+    display: flex; 
+    flex-direction: column;
+    gap: var(--spacing-8); 
+    padding: 0; 
 }
-
-/* Estilo para estado desabilitado */
-.fdn-input:disabled {
-    background: var(--colors-disable);
-    border-color: var(--border-color-disable);
-    color: var(--color-text-disabled);
-    cursor: not-allowed;
-}
-

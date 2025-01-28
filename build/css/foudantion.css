@@ -238,6 +238,12 @@ html {
     font-size: var(--font-size-12);
 }
 
+.label {
+    font-size: var(--font-size-16);
+    color: var(--color-emphasized);
+    line-height: 1.25;
+}
+
 
 /* Utility classes */
 
