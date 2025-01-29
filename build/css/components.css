@@ -162,8 +162,6 @@
     &:visited {
         color: var(--color-link-visited);
     }
-
-    /*focus ring */
     
     /* undeline variant */
     &.underline { 
