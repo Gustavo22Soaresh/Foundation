@@ -358,7 +358,7 @@
         --color-accent-active: var(--olive-500, #57814c); /* Active color for accent text */
         --color-foreground: var(--olive-700, #293f25); /* Icons on hover */
         --color-inverse: var(--gray-600, #242424); /* Text on darker backgrounds */
-        --color-link: var(--indigo-gray-400, #7092ff), ; /* Links */
+        --color-link: var(--indigo-gray-400, #7092ff); /* Links */
         --color-link-active: var(--blue-500, #0b4ad8); /* Active links */
         --color-link-visited: var(--purple-300, #d199f9); /* Visited links */
         --color-success: var(--green-400, #5fc390); /* Success messages and icons */
