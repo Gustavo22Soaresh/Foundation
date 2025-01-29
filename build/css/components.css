@@ -1,6 +1,6 @@
 @import url(_variables.css);
 
-/* Estilos base para todos os botões */
+/* style for buttons */
 .fdn-button { 
     display: inline-flex;
     align-items: center;
@@ -22,16 +22,6 @@
 
     &:hover {
         background-color: var(--bgn-accent-hover);
-    }
-
-    &:focus {
-        outline: none;
-    }
-
-    &:focus-visible {
-        outline: var(--border-style-focus);
-        outline-offset: var(--border-width-2);
-        border-color: var(--border-color-base);
     }
 
     &:active {
@@ -134,19 +124,9 @@
         border-color: var(--border-color-accent);
     }
 
-    &:active {
-        border-color: aqua;
-    }
-
-    &:focus {
-        outline: none;
-    }
-
     &:focus-visible {
-        color: var(--color-emphasized);
-        outline: var(--border-style-focus);
-        outline-offset: var(--border-width-2);
         border-color: var(--border-color-base);
+        color: var(--color-emphasized);
     }
 
     &:disabled {
@@ -163,4 +143,60 @@
     flex-direction: column;
     gap: var(--spacing-8); 
     padding: 0; 
+}
+
+.fdn-link {
+    color: var(--color-link);
+    text-decoration: none;
+    width: fit-content;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &:active {
+        color: var(--color-link-active);
+        text-decoration: underline;
+    }
+
+    &:visited {
+        color: var(--color-link-visited);
+    }
+
+    /*focus ring */
+    
+    /* undeline variant */
+    &.underline { 
+        color: var(--color-base);
+        text-decoration: underline;
+
+        &:hover {
+            color: var(--color-link);
+        }
+
+        &:active {
+            color: var(--color-link-active);
+        }
+
+        &:visited {
+            color: var(--color-link-visited);
+        }
+    }
+
+    /*utily class size */
+    &.sm {
+        font-size: var(--font-size-12);
+    }
+}
+
+/* define the focus ring for components */
+:focus {
+    outline: none;
+}
+
+:focus-visible { 
+    outline: var(--border-style-focus);
+    outline-offset: var(--border-width-2);
+    border-color: var(--border-color-base);
+    border-radius: var(--border-radius-4);
 }
