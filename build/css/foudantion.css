@@ -158,7 +158,7 @@
 
 /* Typograph */
 /* Configurar fonte padrão */
-html {
+body {
     font-family: var(--font-family-sans-serif, sans-serif);
     font-size: var(--font-size-16, 1rem); /* Define o tamanho base */
     line-height: var(--line-height-paragraph 1.4); /* Define a altura da linha base */
@@ -224,6 +224,7 @@ html {
 .body-md,
 .body-sm {
     line-height: var(--line-height-paragraph, 1.4);
+    color: var(--color-base);
 }
 
 .body-lg {
