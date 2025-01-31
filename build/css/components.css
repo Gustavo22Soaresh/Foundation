@@ -136,6 +136,18 @@
         cursor: not-allowed;
     }
 
+    &:not(:placeholder-shown):valid { /* form validation */
+        border-color: var(--border-color-success);
+    }
+
+    &:not(:placeholder-shown):invalid {
+        border-color: var(--border-color-error);
+    }
+
+    &:focus:invalid {
+        border-color: var(--border-color-base);
+    }
+
 }
 
 .fdn-input {
@@ -158,10 +170,6 @@
         color: var(--color-link-active);
         text-decoration: underline;
     }
-
-    &:visited {
-        color: var(--color-link-visited);
-    }
     
     /* undeline variant */
     &.underline { 
@@ -174,10 +182,6 @@
 
         &:active {
             color: var(--color-link-active);
-        }
-
-        &:visited {
-            color: var(--color-link-visited);
         }
     }
 
