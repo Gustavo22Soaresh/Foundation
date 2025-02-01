@@ -191,19 +191,6 @@
     }
 }
 
-/* define the focus ring for components */
-:focus {
-    outline: none;
-}
-
-:focus-visible { 
-    outline: var(--border-style-focus);
-    outline-offset: var(--border-width-2);
-    border-color: var(--border-color-base);
-    border-radius: var(--border-radius-4);
-}
-
-
 /*checkbox*/
 .fdn-checkbox {
     display: flex;
@@ -361,4 +348,16 @@
         }
         
     }
+}
+
+/* define the focus ring for components */
+:focus {
+    outline: none;
+}
+
+:focus-visible { 
+    outline: var(--border-style-focus);
+    outline-offset: var(--border-width-2);
+    border-color: var(--border-color-base);
+    border-radius: var(--border-radius-4);
 }
