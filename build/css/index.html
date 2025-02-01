@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="foudantion.css">
     <link rel="stylesheet" href="components.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=favorite" />
-    <link rel="stylesheet" href="link.css">
+    
 </head>
 <body class="bgn-surface">
     <h1 class="header-1 semibold color-error">Text</h1>
@@ -15,10 +15,27 @@
     <div class="fdn-input">
         <label for="example-input" class="label">Your Input:</label>
         <input required id="example-input" class="fdn-field" type="text" placeholder="Type here..." minlength="12"/>
+        <label for="example-input">Your Input:</label>
+        <input id="example-input" class="fdn-field" type="text" placeholder="Type here..." />
         <button class="fdn-button danger" style="margin: 8px;">click me</button>
         <a class="fdn-link" href="#">link change</a>
         <a class="fdn-link sm" href="google.com/br">link change</a>
         <a class="fdn-link underline" href="google.com/brs">link change</a>
+
+        <div class="fdn-checkbox">
+            <input type="checkbox" id="myCheckbox"/>
+            <label for="myCheckbox">Aceito os termos e condições</label>
+          </div> 
+          
+          <div class="fdn-switch">
+            <input type="checkbox" name="toggle" id="toggle">
+            <label for="toggle"> toogleee</label>
+          </div>
+
+          <div class="fdn-radio-button">
+            <input type="checkbox" name="fdn-radio-button" id="fdn-radio-button">
+            <label for="fdn-radio-button"> toogleee</label>
+          </div>
     </div>
 
 </body>

@@ -191,6 +191,165 @@
     }
 }
 
+/*checkbox*/
+.fdn-checkbox {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-8);
+    width: fit-content;
+
+    input[type="checkbox"] {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        appearance: none;
+        height: var(--size-16);
+        width: var(--size-16);
+        background-color: transparent;
+        border-radius: var(--border-radius-4);
+        border: var(--border-width-2) solid var(--border-color-base);
+        outline: none;
+        cursor: pointer;
+    
+        &:hover {
+            background-color: var(--bgn-foreground);
+        }
+    
+        &:checked {
+            background-color: var(--bgn-accent);
+            border-color: var(--border-color-accent);
+    
+            &:hover {
+                background-color: var(--bgn-accent-hover);
+                border-color: var(--color-accent-hover);
+            }
+    
+            &:after {
+                display: block;
+                content: "✓";
+                color: var(--color-inverse);
+                font-size: 1rem;
+                font-weight: bold;
+            }
+        }
+    
+        &.error {
+            border-color: var(--border-color-error);
+    
+            &:hover {
+                background-color: var(--bgn-error);
+            }
+    
+            &:checked {
+                background-color: var(--bgn-danger);
+                border-color: var(--border-color-error);
+        
+                &:hover {
+                    background-color: var(--bgn-danger-hover);
+                    border-color: var(--bgn-danger-hover);
+                }
+            }
+        }
+    }
+}
+
+/*switch*/
+.fdn-switch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-8);
+    width: fit-content;
+    
+    input[type=checkbox] {
+        display: flex;
+        align-items: center;
+        appearance: none;
+        background-color: transparent;
+        width: var(--size-40);
+        height: var(--size-20);
+        border-radius: var(--size-16);
+        border: var(--border-style-base);
+        cursor: pointer;
+
+        &::before {
+            content: '';
+            background-color: var(--color-base);
+            width: var(--size-16);
+            height: var(--size-16);
+            border-radius: var(--size-20);
+            margin: 0.125rem;
+            transition: 0.3s;
+        }
+
+        &:hover {
+            background-color: var(--bgn-surface-hover);
+        }
+
+        &:checked {
+            background-color: var(--bgn-accent);
+            border-color: var(--border-color-accent);
+    
+            &:hover {
+                background-color: var(--bgn-accent-hover);
+                border-color: var(--color-accent-hover);
+            }
+
+            &::before {
+                background-color: var(--color-inverse);
+                transform: translateX(1.125rem);
+                transition: 0.3s;
+            }
+        }
+}
+}
+
+/*radio button*/
+.fdn-radio-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-8);
+    width: fit-content;
+
+    input[type=checkbox] {
+        appearance: none;
+        background-color: transparent;
+        border: var(--border-style-base);
+        border-width: var(--border-width-2);
+        width: var(--size-16);
+        height: var(--size-16);
+        border-radius: var(--border-radius-16);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            background-color: var(--bgn-foreground);
+        }
+        &:checked {
+            background-color: var(--bgn-accent);
+            border-color: var(--border-color-accent);
+    
+            &:hover {
+                background-color: var(--bgn-accent-hover);
+                border-color: var(--color-accent-hover);
+            }
+    
+            &:after {
+                display: block;
+                content: "";
+                width: 6px;
+                height: 6px;
+                background-color: var(--color-inverse);
+                border-radius: 6px;
+            }
+        }
+        
+    }
+}
+
 /* define the focus ring for components */
 :focus {
     outline: none;
