@@ -1,6 +1,6 @@
 @import url(_variables.css);
 
-/* Estilos base para todos os botões */
+/* style for buttons */
 .fdn-button { 
     display: inline-flex;
     align-items: center;
@@ -22,16 +22,6 @@
 
     &:hover {
         background-color: var(--bgn-accent-hover);
-    }
-
-    &:focus {
-        outline: none;
-    }
-
-    &:focus-visible {
-        outline: var(--border-style-focus);
-        outline-offset: var(--border-width-2);
-        border-color: var(--border-color-base);
     }
 
     &:active {
@@ -134,19 +124,9 @@
         border-color: var(--border-color-accent);
     }
 
-    &:active {
-        border-color: aqua;
-    }
-
-    &:focus {
-        outline: none;
-    }
-
     &:focus-visible {
-        color: var(--color-emphasized);
-        outline: var(--border-style-focus);
-        outline-offset: var(--border-width-2);
         border-color: var(--border-color-base);
+        color: var(--color-emphasized);
     }
 
     &:disabled {
@@ -154,6 +134,18 @@
         border-color: var(--border-color-disable);
         color: var(--color-text-disabled);
         cursor: not-allowed;
+    }
+
+    &:not(:placeholder-shown):valid { /* form validation */
+        border-color: var(--border-color-success);
+    }
+
+    &:not(:placeholder-shown):invalid {
+        border-color: var(--border-color-error);
+    }
+
+    &:focus:invalid {
+        border-color: var(--border-color-base);
     }
 
 }
@@ -164,6 +156,53 @@
     gap: var(--spacing-8); 
     padding: 0; 
 }
+
+.fdn-link {
+    color: var(--color-link);
+    text-decoration: none;
+    width: fit-content;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &:active {
+        color: var(--color-link-active);
+        text-decoration: underline;
+    }
+    
+    /* undeline variant */
+    &.underline { 
+        color: var(--color-base);
+        text-decoration: underline;
+
+        &:hover {
+            color: var(--color-link);
+        }
+
+        &:active {
+            color: var(--color-link-active);
+        }
+    }
+
+    /*utily class size */
+    &.sm {
+        font-size: var(--font-size-12);
+    }
+}
+
+/* define the focus ring for components */
+:focus {
+    outline: none;
+}
+
+:focus-visible { 
+    outline: var(--border-style-focus);
+    outline-offset: var(--border-width-2);
+    border-color: var(--border-color-base);
+    border-radius: var(--border-radius-4);
+}
+
 
 /*checkbox*/
 .fdn-checkbox {
