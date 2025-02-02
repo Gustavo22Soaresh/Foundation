@@ -353,6 +353,59 @@
     }
 }
 
+/* tooltips */
+.tooltip {
+
+    .fdn-tooltip {
+        position: relative;                                 
+        display: inline-block;           
+
+        &:hover .tooltip-text {
+            visibility: visible;
+        }
+        
+        .tooltip-text {            
+            visibility: hidden;
+            position: absolute;
+            background-color: var(--color-base);
+            border-radius: var(--border-radius-4);
+            padding: var(--spacing-8) var(--spacing-4);            
+            font-size: var(--font-size-12);
+            line-height: var(--line-height-label);            
+            color: var(--color-inverse);                        
+            white-space: nowrap;
+            transition: opacity 0.2s ease, visibility 0.2s ease;
+            z-index: 10;
+        }
+        
+        &[data-direction="right"] .tooltip-text {
+            top: 50%;
+            left: 100%;
+            transform: translateY(-50%) translateX(0.5rem);
+        }
+
+        &[data-direction="left"] .tooltip-text {
+            top: 50%;
+            right: 100%;
+            transform: translateY(-50%) translateX(-0.5rem);                          
+        }
+
+        &[data-direction="top"] .tooltip-text {
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-00.5rem);                                      
+        }
+
+        &[data-direction="bottom"] .tooltip-text {
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%) translateY(0.5rem);                
+        } 
+
+
+    }   
+}
+
 /* define the focus ring for components */
 :focus {
     outline: none;
