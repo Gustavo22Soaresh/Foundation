@@ -1,5 +1,5 @@
 ---
-name: New Component
+name: "[ComponentName]: Add [ComponentName] component to Atlas"
 about: Describe this issue template's purpose here.
 title: "[New Component]"
 labels: Design, help wanted, New Component
