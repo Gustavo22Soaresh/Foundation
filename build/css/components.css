@@ -10,7 +10,7 @@
     }
 }
 /* style for buttons */
-.fdn-button { 
+.atl-button { 
     display: inline-flex;
     align-content: center;
     justify-content: center;
@@ -111,7 +111,7 @@
     }
 }
 
-.fdn-field {
+.atl-field {
     padding: var(--spacing-8) var(--spacing-12, 0.75rem);
     display: flex;
     align-items: center;
@@ -162,14 +162,14 @@
 
 }
 
-.fdn-input {
+.atl-input {
     display: flex; 
     flex-direction: column;
     gap: var(--spacing-8); 
     padding: 0; 
 }
 
-.fdn-link {
+.atl-link {
     display: flex;
     align-content: center;
     justify-content: center;
@@ -209,7 +209,7 @@
 }
 
 /*checkbox*/
-.fdn-checkbox {
+.atl-checkbox {
     display: flex;
     align-items: center;
     gap: var(--spacing-4);
@@ -275,7 +275,7 @@
 }
 
 /*switch*/
-.fdn-switch {
+.atl-switch {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -326,7 +326,7 @@
 }
 
 /*radio button*/
-.fdn-radio-button {
+.atl-radio-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -372,7 +372,7 @@
 }
 
 /* tooltips */
-.fdn-tooltip {
+.atl-tooltip {
     position: relative;
     display: inline-block;
 

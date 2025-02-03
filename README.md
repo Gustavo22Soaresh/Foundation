@@ -1,59 +1,55 @@
-<h1 align="center">
-  <br>
-  <img src="./cover.png" alt="Foudantion Design System">
-  Foundation (beta) <br>
-<p>design system for OSM apps</p>
-</h1>
+# Atlas Design System
 
-## Whats is Foundation? ##
+Welcome to the **Atlas Design System** for OpenStreetMap! This project aims to provide a consistent and scalable foundation for creating user interfaces aligned with OpenStreetMap's visual identity and principles. Here, you'll find Design Tokens, Components, Icons, Resources, and guidelines for usage and contributions.
 
-Foundation is a Design System for the OpenStreetMap ecosystem based on [Bootstrap](https://getbootstrap.com/) and keeping the simplicity of OSM.org.
+## Design Tokens
+Design Tokens are the foundation of our design system. They define colors, typography, spacing, borders, and other visual properties to ensure consistency across all products and platforms.
 
-  <img src="./Style (1).png" alt="Foudantion Design System">
+- **Colors**: Primary, secondary, and neutral color palettes.
+- **Typography**: Fonts, sizes, and weights.
+- **Spacing**: Margins, paddings, and grids.
+- **Borders and Shadows**: Border styles and shadow effects.
 
-## Typography - [Source Sans Pro](https://fonts.google.com/specimen/Source+Sans+Pro/about) ##
+## Components and Icons
+Our library of components and icons is designed to be modular and reusable, ensuring a cohesive user experience.
 
-| Class  | Weight | px | px |
-| ----- | ----- | --- | --- |
-| H1 | Semibold (600) | 72px | 4.5rem |
-| H2 | Semibold (600) | 48px | 3rem |
-| H3 | Semibold (600) | 40px | 2.5rem |
-| H4 | Bold (700) | 24px | 1.5rem |
-| H5 | Bold (700) | 20px | 1.25rem |
-| H6 | Bold (700) | 18px | 1.125rem |
-| Body Light | Light (300) | 16px | 1rem |
-| Body | Regular (400) | 16px | 1rem |
-| Body Medium | Semibold (600) | 16px | 1rem |
-| Small | Regular (400) | 12px | 0.75rem |
-| Caption | Bold (700) | 12px | 0.75rem |
+- **Components**: Buttons, forms, cards, modals, navigation, and more.
+- **Icons**: We currently use [**Material Symbols**](https://fonts.google.com/icons) as our icon library.
 
+## Resources
+Here, you'll find additional resources to help with the implementation and understanding of the Design System.
 
-## Colors ##
+- [**Figma Library**](https://www.figma.com/design/2vheURjyvYg2oyBeuQOxQ1/Atlas---Design-System?node-id=458-2470&t=831K8B3NnQoe1vdt-1): Component and style library in Figma.
+- **Documentation**: Detailed guides on how to use and customize components.
+- **Usage Examples**: Practical implementation examples.
 
-| Color | HEX |
-| ----- | ----- |
-| Just Blue | #5872C7 |
-| Just Green | #6CC559 |
-| Dark Blue | #1e2936 |
-| Dark Gray | #4c4c4c |
-| Gray | #b1b2b5 |
-| Red Ice | #e8e9ea |
+## Usage and Contributions
+We want the OpenStreetMap Design System to be a useful tool for everyone. Here are some ways to start using and contributing to the project.
 
-## Icons ##
+### How to Use
+1. Install the Design System package in your project.
+2. Import the necessary components and tokens.
+3. Follow the usage guidelines to ensure consistency.
 
-- [FontAwesome](https://fontawesome.com/download)
-- [Bootstrap Icons](https://icons.getbootstrap.com/)
+### How to Contribute
+1. Fork the repository.
+2. Create a branch for your contribution.
+3. Submit a pull request with your changes.
+4. Follow our contribution guidelines to ensure your contribution is accepted.
 
-## Collaborate ##
+## Maintainers
+Atlas is maintained by a diverse group of designers and developers, with support from the **University of Brasília**, the **Federal University of Espírito Santo**, and the OpenStreetMap volunteer community.
 
-Look at [CONTRIBUTING](./CONTRIBUTING.md)
+## Contact Us
+If you have questions, suggestions, or need assistance, feel free to reach out to us:
 
-## Projects ##
- - [Gaia - Redesign OSM.org](https://github.com/Playzinho/gaia)
-## Next steps ##
+- **Discord**: [Design System Discord Channel](link)
+- **GitHub Issues**: [Open an Issue](link)
 
-- Darkmode support
-- Port to TailwindCSS
+## Guiding Principles
+Our Design System is guided by the following core principles:
 
-## License ##
-- [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/)
+1. **Consistency**: Ensure a cohesive user experience across all products.
+2. **Accessibility**: Prioritize accessibility in all components and guidelines.
+3. **Modularity**: Create reusable and scalable components.
+4. **Transparency**: Maintain an open and transparent process for contributions and feedback.
