@@ -1,7 +1,7 @@
 ---
 name: "[ComponentName]: Add [ComponentName] component to Atlas"
-about: Describe this issue template's purpose here.
-title: "[New Component]"
+about: 'Request a new design token '
+title: "[ComponentName]: Add [ComponentName] component to Atlas"
 labels: Design, help wanted, New Component
 assignees: ''
 
