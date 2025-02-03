@@ -12,7 +12,7 @@
 /* style for buttons */
 .fdn-button { 
     display: inline-flex;
-    align-items: center;
+    align-content: center;
     justify-content: center;
     width: fit-content;
     background-color: var(--bgn-accent);
@@ -24,10 +24,11 @@
     font-family: var(--font-family-sans-serif);
     font-weight: var(--font-weight-regular);    
     font-size: var(--font-size-16);
-    line-height: 1;
+    line-height: 1.1;
     outline: none;
     cursor: var(--cursor-pointer);
     height: var(--dimension-36);
+    flex-shrink: 0;
 
     &:hover {
         background-color: var(--bgn-accent-hover);
@@ -86,7 +87,6 @@
     }
 
     &.with-icon {
-        align-items: center;
         padding: var(--spacing-8) var(--spacing-24);
     }
 
@@ -170,9 +170,14 @@
 }
 
 .fdn-link {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: var(--spacing-4);
     color: var(--color-link);
     text-decoration: none;
     width: fit-content;
+    line-height: var(--line-height-label);
 
     &:hover {
         text-decoration: underline;
