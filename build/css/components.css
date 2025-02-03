@@ -145,16 +145,19 @@
         cursor: not-allowed;
     }
 
-    &:not(:placeholder-shown):valid { /* form validation */
-        border-color: var(--border-color-success);
-    }
-
-    &:not(:placeholder-shown):invalid {
-        border-color: var(--border-color-error);
-    }
-
-    &:focus:invalid {
-        border-color: var(--border-color-base);
+    /* form validation */
+    &.validation {
+        &:user-valid { 
+            border-color: var(--border-color-success);
+        }
+    
+        &:user-invalid {
+            border-color: var(--border-color-error);
+        }
+    
+        &:focus:invalid {
+            border-color: var(--border-color-base);
+        }
     }
 
 }
