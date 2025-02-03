@@ -1,3 +1,4 @@
+![Cover of Atlas design system for OpenStreetMap aplications](/Cover.png)
 # Atlas Design System
 
 Welcome to the **Atlas Design System** for OpenStreetMap! This project aims to provide a consistent and scalable foundation for creating user interfaces aligned with OpenStreetMap's visual identity and principles. Here, you'll find Design Tokens, Components, Icons, Resources, and guidelines for usage and contributions.
